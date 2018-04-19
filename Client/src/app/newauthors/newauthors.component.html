@@ -1,0 +1,5 @@
+<a [routerLink]="['']">Home</a>
+<p>Add a new author:</p>
+<p>Name: <input #authorName type="text" name="name"></p>
+<button [routerLink]="['']">Cancel</button>
+<button (click)="addAuthor(authorName.value)" [routerLink]="['']">Submit</button>
